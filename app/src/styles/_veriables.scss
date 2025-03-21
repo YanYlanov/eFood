@@ -1,0 +1,18 @@
+@use 'helpers' as *;
+
+:root {
+    --color-accent: #FF7A50;
+    --color-dark: #363853;
+    --color-dark-alt: #4A4B64;
+    --color-light: #FFFFFF;
+    --color-light-alt: #F8F9FE;
+    --color-light-gray: #AAAAAA;
+    --color-gray: #646464;
+
+    --transition-duration: 0.2s;
+    // --border-radius-small: #{rem(20)};
+
+    --font-family-base: 'Rubik', sans-serif;
+    --container-width: #{rem(1230)};
+    --container-padding-x: #{rem(10)};
+}

@@ -1,0 +1,66 @@
+@use '../styles/helpers' as *;
+
+.footer {
+&__main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: rem(121);
+}
+
+  &__body {
+    padding-bottom: rem(25);
+  }
+
+  &__menu  {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: rem(100);
+    &-title {
+      margin-bottom: rem(36);
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(36);
+
+      &--gap-15 {
+        row-gap: rem(15);
+      }
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      column-gap: rem(7);
+      white-space: nowrap;
+      line-height: rem(32);
+    }
+  }
+
+  &__logo {
+    margin-bottom: rem(30);
+  }
+
+  &__extra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: #F8F9FC;
+    padding-block: rem(32);
+    border-top: rem(1) solid  #969696;
+
+    &-body {
+      display: flex;
+      align-items: center;
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: rem(50);
+    }
+  }
+}

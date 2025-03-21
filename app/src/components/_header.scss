@@ -1,0 +1,72 @@
+@use '../styles/helpers' as *;
+
+.header {
+    color: var(--color-dark);
+
+    &__inner {
+        margin-top: rem(55);
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__overlay {
+        display: contents;
+    }
+
+    &__menu {
+        font-size: rem(18);
+
+        &-list {
+            display: flex;
+            column-gap: rem(40);
+        }
+
+        &-link {
+            display: inline-flex;
+            align-items: center;
+            height: rem(30);
+
+            &.is-active {
+                color: var(--color-accent);
+            }
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        column-gap: rem(60);
+
+        &-serch-container {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            @include hover {
+                svg * {
+                    stroke: var(--color-accent)
+                }
+            }
+        }
+
+        &-search {
+            @include visually-hidden;
+        }
+
+        &-cart {
+            @include reset-button;
+            display: inline-flex;
+            align-items: center;
+
+            @include hover {
+                svg * {
+                    stroke: var(--color-accent)
+                }
+            }
+        }
+    }
+}

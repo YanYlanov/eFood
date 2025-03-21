@@ -1,0 +1,22 @@
+@use '../styles/helpers' as *;
+
+.pagination {
+  display: flex;
+  align-items: center;
+  column-gap: rem(14);
+  &__button {
+    width: rem(12);
+    height: rem(12);
+    border-radius: 50%;
+    border: none;
+    background: #D2D2DC;
+
+    @include  hover {
+      background: var(--color-accent);
+    }
+
+    &.is-active {
+      background: var(--color-accent);
+    }
+  }
+}

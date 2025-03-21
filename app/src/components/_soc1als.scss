@@ -1,0 +1,19 @@
+@use '../styles/helpers' as *;
+
+.soc1als {
+&__list {
+  display: flex;
+  align-items: center;
+  column-gap: rem(13);
+}
+
+  &__item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(40);
+    height: rem(40);
+    border-radius: 50%;
+    background: #EEEEEF;
+  }
+}

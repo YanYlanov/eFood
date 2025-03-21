@@ -1,0 +1,21 @@
+@use '../styles/helpers' as *;
+
+.category {
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: rem(40);
+    margin-bottom: rem(165);
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(43);
+  }
+}

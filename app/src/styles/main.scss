@@ -1,0 +1,23 @@
+@use './normalize';
+@use './fonts';
+@use './veriables';
+@use './utils';
+@use './globals';
+
+@use '../components/logo';
+@use '../components/soc1als';
+@use '../components/input';
+@use '../components/button';
+@use '../components/header';
+@use '../components/hero';
+@use '../components/product-card';
+@use '../components/pagination';
+@use '../components/our-popular';
+@use '../components/perks';
+@use '../components/category-card';
+@use '../components/category';
+@use '../components/mobile-app';
+@use '../components/reviews';
+@use '../components/form-subscribe';
+@use '../components/subscribe';
+@use '../components/footer';

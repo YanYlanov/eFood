@@ -1,0 +1,8 @@
+@use '../styles/helpers' as *;
+
+.input {
+  padding-inline: rem(43);
+  height: rem(78);
+  border-radius: rem(70);
+  border: none;
+}

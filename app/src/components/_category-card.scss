@@ -1,0 +1,49 @@
+@use '../styles/helpers' as *;
+
+.category-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: rem(22);
+      border-top-left-radius: rem(53);
+      border-top-right-radius: rem(5);
+      border-bottom-right-radius: rem(53);
+      border-bottom-left-radius: rem(5);
+      background: var(--color-light);
+      overflow:  hidden;
+
+      &__body {
+            max-width: rem(300);
+            padding-bottom: rem(22);
+      }
+
+      &__title {
+            font-size: rem(24);
+            font-weight: 400;
+      }
+
+      &__time {
+            display: inline-flex;
+            margin-right: rem(24);
+      }
+
+      &__description {
+            font-size: rem(18);
+            font-weight: 300;
+      }
+
+      &__link {
+            display: inline-flex;
+            color: var(--color-light);
+            padding-inline: calc(rem(27) - rem(1));
+            padding-block: calc(rem(5) - rem(1));
+            background-color: var(--color-accent);
+            border: rem(1) solid var(--color-accent);
+
+            @include hover {
+                  svg * {
+                        fill: var(--color-accent);
+                  }
+            }
+      }
+}

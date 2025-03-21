@@ -1,0 +1,85 @@
+@use '../styles/helpers' as *;
+.reviews {
+  max-width: rem(1163);
+  width: 100%;
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: rem(60);
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__slider {
+    max-width: rem(662);
+
+  }
+
+  &__body {
+    max-width: rem(573);
+    position: relative;
+    line-height: 225%;
+    &-quote {
+      position: absolute;
+      top: 4.6%;
+      left: -6.6%;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 400;
+      font-size: rem(80);
+      color: #DDDDDD;
+      display: inline;
+    }
+
+    &-quote-end{
+      display: inline;
+      position: absolute;
+      top: 98%;
+      right: 9.5%;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 400;
+      font-size: rem(80);
+      color: #DDDDDD;
+      display: inline;
+    }
+  }
+
+  &__slider-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  margin-top: rem(74);
+    &-body {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      row-gap: rem(18);
+    }
+
+    &-name {
+      color: var(--color-accent);
+    }
+
+    &-status {
+      font-size: rem(14);
+      color: #AAAAAA;
+    }
+
+    &-actions {
+      display: flex;
+      align-items: center;
+      column-gap: rem(44);
+    }
+
+    &-button {
+      border: none;
+      background: transparent;
+    }
+  }
+
+}

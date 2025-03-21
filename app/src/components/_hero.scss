@@ -1,0 +1,72 @@
+@use '../styles/helpers' as *;
+
+.hero {
+    &__main {
+        display: flex;
+        align-items: center;
+        margin-top: rem(105);
+        margin-bottom: rem(94);
+    }
+
+    &__body {
+        max-width: rem(530);
+    }
+
+    &__title {
+        margin-bottom: rem(23);
+    }
+
+    &__description {
+        margin-bottom: rem(45);
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        column-gap: rem(30);
+    }
+
+    &__link-app {
+        text-decoration: underline;
+    }
+
+    &__bg-container {
+        position: relative;
+    }
+
+    &__bg {
+        // display: flex;
+        // z-index: 1000;
+    }
+
+    &__call-img {
+        position: absolute;
+        bottom: 71.8%;
+        left: 16.5%;
+    }
+
+    &__search-img {
+        position: absolute;
+        bottom: 87.3%;
+        left: 30.5%;
+    }
+
+    &__time-img {
+        position: absolute;
+        bottom: 87.3%;
+        left: 78.8%;
+    }
+
+    &__arrow-pointer-img {
+        position: absolute;
+        bottom: 63.4%;
+        left: 71.9%;
+        z-index: -1;
+    }
+
+    &__product-img {
+        position: absolute;
+        bottom: 45%;
+        left: 74.3%;
+    }
+}

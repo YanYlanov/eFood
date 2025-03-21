@@ -1,0 +1,46 @@
+@use '../styles/helpers' as *;
+
+.subscribe {
+  max-width: rem(1170);
+  width: 100%;
+  background: var(--color-accent);
+  border-radius: rem(20);
+
+  &__main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("../../src/assets/image/subscribe/bg.svg");
+    }
+  }
+
+  &__body {
+    padding-block: rem(59);
+  }
+
+  &__title {
+    font-size: rem(40);
+    color: var(--color-light);
+    margin-bottom: rem(12);
+    text-align: center;
+  }
+
+  &__description {
+    margin-bottom: rem(31);
+    text-align: center;
+    color: var(--color-light);
+    font-size: rem(16);
+    font-weight: 400;
+  }
+
+}
